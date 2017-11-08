@@ -22,7 +22,7 @@ extern UTFT lcd;
 // Static fields of class DisplayField
 LcdFont DisplayField::defaultFont = nullptr;
 Colour DisplayField::defaultFcolour = white;
-Colour DisplayField::defaultBcolour = black;
+Colour DisplayField::defaultBcolour = orange;
 Colour DisplayField::defaultButtonBorderColour = black;
 Colour DisplayField::defaultGradColour = 0;
 Colour DisplayField::defaultPressedBackColour = black;
