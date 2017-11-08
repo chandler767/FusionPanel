@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109.373042016.44514639/PATH/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109.373042016.44514639/PATH/operation=replace
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109.373042016.44514639/PATH/value=E\:\\Arduino-1.5.8\\hardware\\tools\\gcc-arm-none-eabi-4.8.3-2014q1\\bin;C\:/Program Files/Java/jre1.8.0_151/bin/server;C\:/Program Files/Java/jre1.8.0_151/bin;C\:/Program Files/Java/jre1.8.0_151/lib/amd64;C\:\\ProgramData\\Oracle\\Java\\javapath;C\:\\WINDOWS\\system32;C\:\\WINDOWS;C\:\\WINDOWS\\System32\\Wbem;C\:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Program Files\\Git\\cmd;C\:\\Users\\Chandler Mayo\\AppData\\Local\\Microsoft\\WindowsApps;E\:\\Arduino-1.5.8\\hardware\\arduino\\sam\\system\\CMSIS\\Examples\\cmsis_example\\gcc_arm;
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109.373042016.44514639/append=true
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109.373042016.44514639/appendContributed=true
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109.373042016/PATH/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109.373042016/PATH/operation=replace
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109.373042016/PATH/value=E\:\\Arduino-1.5.8\\hardware\\tools\\gcc-arm-none-eabi-4.8.3-2014q1\\bin;C\:/Program Files/Java/jre1.8.0_151/bin/server;C\:/Program Files/Java/jre1.8.0_151/bin;C\:/Program Files/Java/jre1.8.0_151/lib/amd64;C\:\\ProgramData\\Oracle\\Java\\javapath;C\:\\WINDOWS\\system32;C\:\\WINDOWS;C\:\\WINDOWS\\System32\\Wbem;C\:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Program Files\\Git\\cmd;C\:\\Users\\Chandler Mayo\\AppData\\Local\\Microsoft\\WindowsApps;E\:\\Arduino-1.5.8\\hardware\\arduino\\sam\\system\\CMSIS\\Examples\\cmsis_example\\gcc_arm;E\:\\Arduino-1.5.8\\hardware\\tools\\gcc-arm-none-eabi-4.8.3-2014q1\\bin
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109.373042016/append=true
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109.373042016/appendContributed=true
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109/PATH/delimiter=;
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109/PATH/operation=replace
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109/PATH/value=C\:\\Arduino-1.5.8\\hardware\\tools\\gcc-arm-none-eabi-4.8.3-2014q1\\bin;C\:/Program Files/Java/jre1.8.0_151/bin/server;C\:/Program Files/Java/jre1.8.0_151/bin;C\:/Program Files/Java/jre1.8.0_151/lib/amd64;C\:\\ProgramData\\Oracle\\Java\\javapath;C\:\\WINDOWS\\system32;C\:\\WINDOWS;C\:\\WINDOWS\\System32\\Wbem;C\:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Program Files\\Git\\cmd;C\:\\Users\\Chandler Mayo\\AppData\\Local\\Microsoft\\WindowsApps;C\:\\Arduino-1.5.8\\hardware\\arduino\\sam\\system\\CMSIS\\Examples\\cmsis_example\\gcc_arm
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109/append=true
+environment/project/cdt.managedbuild.config.gnu.cross.exe.release.1006567109/appendContributed=true
