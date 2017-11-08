@@ -786,7 +786,7 @@ void CreateMainPages(uint32_t language, const ColourScheme& colours)
 	commonRoot = mgr.GetRoot();		// save the root of fields that we display on more than one page
 
 	// Fusion3 boot animation
-	lcd.drawBitmap(140, (DisplayY/2-19), 200, 39, FusionLogo);
+	lcd.drawBitmap16(140, (DisplayY/2-19), 200, 39, FusionLogo);
 	lcd.setColor(slate);
 	lcd.fillRect(0,250,480,270);
 	lcd.setColor(orange);
