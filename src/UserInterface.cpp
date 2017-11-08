@@ -1072,6 +1072,7 @@ namespace UI
 		if (index < (int)ARRAY_SIZE(timesLeft))
 		{
 			timesLeft[index] = seconds;
+			/*
 			timesLeftText.copy(strings->file);
 			AppendTimeLeft(timesLeft[0]);
 			timesLeftText.catFrom(strings->filament);
@@ -1081,6 +1082,10 @@ namespace UI
 				timesLeftText.catFrom(strings->layer);
 				AppendTimeLeft(timesLeft[2]);
 			}
+			timeLeftField->SetValue(timesLeftText.c_str());
+			mgr.Show(timeLeftField, true);
+			*/
+			AppendTimeLeft(timesLeft[1]); // Only show filament estimate.
 			timeLeftField->SetValue(timesLeftText.c_str());
 			mgr.Show(timeLeftField, true);
 		}
