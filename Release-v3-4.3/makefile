@@ -58,24 +58,24 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: PanelDue-v3-4.3.elf
+all: FusionPanel-v3-4.3.elf
 
 # Tool invocations
-PanelDue-v3-4.3.elf: $(OBJS) $(USER_OBJS)
+FusionPanel-v3-4.3.elf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	arm-none-eabi-g++ -mthumb -static -mcpu=cortex-m4 --specs=nano.specs -Wl,--gc-sections -Wl,--fatal-warnings -TE:\PanelDue\PanelDue\src\ASF\sam\utils\linker_scripts\sam4s\sam4s4\gcc\flash.ld -Wl,--defsym,__stack_size__=0x1000 -Wl,-Map,E:\PanelDue\PanelDue\Release-v3-4.3/PanelDue-v3-4.3.map -o "PanelDue-v3-4.3.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-g++ -mthumb -static -mcpu=cortex-m4 --specs=nano.specs -Wl,--gc-sections -Wl,--fatal-warnings -TE:\PanelDue\FusionPanel\src\ASF\sam\utils\linker_scripts\sam4s\sam4s4\gcc\flash.ld -Wl,--defsym,__stack_size__=0x1000 -Wl,-Map,E:\PanelDue\FusionPanel\Release-v3-4.3/FusionPanel-v3-4.3.map -o "FusionPanel-v3-4.3.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
 
 # Other Targets
 clean:
-	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(C_DEPS)$(CPP_DEPS) PanelDue-v3-4.3.elf
+	-$(RM) $(CC_DEPS)$(C++_DEPS)$(EXECUTABLES)$(OBJS)$(C_UPPER_DEPS)$(CXX_DEPS)$(C_DEPS)$(CPP_DEPS) FusionPanel-v3-4.3.elf
 	-@echo ' '
 
 post-build:
-	-arm-none-eabi-objcopy -O binary E:\PanelDue\PanelDue\Release-v3-4.3/PanelDue-v3-4.3.elf E:\PanelDue\PanelDue\Release-v3-4.3/PanelDue-v3-4.3.bin
+	-arm-none-eabi-objcopy -O binary E:\PanelDue\FusionPanel\Release-v3-4.3/FusionPanel-v3-4.3.elf E:\PanelDue\FusionPanel\Release-v3-4.3/FusionPanel-v3-4.3.bin
 	-@echo ' '
 
 .PHONY: all clean dependents post-build

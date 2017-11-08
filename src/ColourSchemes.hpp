@@ -14,6 +14,7 @@
 const Colour
 	white = 0xFFFF,
 	black = 0x0000,
+	slate = UTFT::fromRGB(65,65,65), // Fusion3 Slate
 	grey = UTFT::fromRGB(128, 128, 128),
 	red = UTFT::fromRGB(255,0,0),
 	lightRed =  UTFT::fromRGB(255, 128, 128),
@@ -21,6 +22,7 @@ const Colour
 	yellow = UTFT::fromRGB(128,128,0),
 	lightYellow = UTFT::fromRGB(255, 255, 128),
 	darkYellow = UTFT::fromRGB(64, 64, 0),
+	orange = UTFT::fromRGB(255,95,0), // Fusion3 Orange
 	lightOrange = UTFT::fromRGB(255, 224, 192),
 	darkOrange = UTFT::fromRGB(128, 64, 0),
 	green = UTFT::fromRGB(0,255,0),

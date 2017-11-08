@@ -787,7 +787,7 @@ void CreateMainPages(uint32_t language, const ColourScheme& colours)
 
 	// Fusion3 boot animation
 	lcd.drawBitmap(140, (DisplayY/2-19), 200, 39, FusionLogo);
-	lcd.setColor(UTFT::fromRGB(65,65,65));
+	lcd.setColor(slate);
 	lcd.fillRect(0,250,480,270);
 	lcd.setColor(orange);
 	for (unsigned int i = 2; i < (DisplayY-2); ++i) // Progress bar on the loading screen.
