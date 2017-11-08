@@ -27,6 +27,4 @@ extern const uint8_t IconHomeV[], IconHomeW[];
 extern const uint8_t IconBed[], IconOk[], IconCancel[], IconFiles[], IconKeyboard[], IconTrash[];
 extern const uint8_t IconBackspace[], IconUp[], IconDown[], IconEnter[];
 
-extern const uint16_t FusionLogo[];
-
 #endif /* ICONS_H_ */
