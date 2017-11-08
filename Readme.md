@@ -19,7 +19,9 @@ This firmware is based off of version 1.17 of the PanelDueFirmware and it has be
   * Ensure it contains: C:\Arduino-1.5.8\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\bin
   * Ensure there is a copy of make on your PATH. If not then add: C:\Arduino-1.5.8\hardware\arduino\sam\system\CMSIS\Examples\cmsis_example\gcc_arm
  7. Set the build target to **release-v3-4.3** and build.
-
+   * You may encounter a resource error on the first and second builds. The missing resources will automatically be created and then you will be able to build.
+   * You will get several *defined but not used* warnings from labels and buttons that have been disabled for the F400. This is normal.
+   
 # Firmware Upload Instructions
 Instructions for flashing the firmware binary via USB are at: http://miscsolutions.wordpress.com/paneldue/
 
