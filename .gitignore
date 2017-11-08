@@ -8,6 +8,9 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
+# Build folder
+Release-v3-4.3/
+
 # Windows Installer files
 *.cab
 *.msi
