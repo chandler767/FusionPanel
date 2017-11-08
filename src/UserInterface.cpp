@@ -747,8 +747,8 @@ void CreateSetupTabFields(uint32_t language, const ColourScheme& colours)
 	AddTextButton(row5, 0, 3, strings->calibrateTouch, evCalTouch, nullptr);
 	AddTextButton(row5, 1, 3, strings->mirrorDisplay, evInvertX, nullptr);
 	AddTextButton(row5, 2, 3, strings->invertDisplay, evInvertY, nullptr);
-	coloursButton = AddTextButton(row6, 0, 3, strings->colourSchemeNames[colours.index], evSetColours, nullptr);
-	coloursButton->SetText(strings->colourSchemeNames[colours.index]);
+	//coloursButton = AddTextButton(row6, 0, 3, strings->colourSchemeNames[colours.index], evSetColours, nullptr); // Hide the button that allows users to set light or dark colors.
+	//coloursButton->SetText(strings->colourSchemeNames[colours.index]);
 	AddTextButton(row6, 1, 3, strings->brightnessDown, evDimmer, nullptr);
 	AddTextButton(row6, 2, 3, strings->brightnessUp, evBrighter, nullptr);
 	AddTextButton(row7, 0, 3, strings->saveSettings, evSaveSettings, nullptr);
