@@ -6,11 +6,10 @@ This is a modified version of the [PanelDueFirmware](https://github.com/dc42/Pan
 Compatible with v2 and v3 boards.
 
 # Changes
-This firmware is based off of version 1.17 of the PanelDueFirmware and it has been modified to be used with the [F400 3D Printer](http://fusion3design.com)
+This firmware is based off of version 1.17 of the PanelDueFirmware and it has been modified to be used with the [F400 3D Printer](http://fusion3design.com).
 
 # Build Instructions
 1. Download [Arduino version 1.5.8](https://www.arduino.cc/download_handler.php?f=/arduino-1.5.8-windows.zip) and install it into folder C:/Arduino-1.5.8.
-  * The compiler and associated tools will then be in folder C:\Arduino-1.5.8\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\bin
 2. Download and install Eclipse Oxygen for C/C++ Developers, from http://www.eclipse.org/downloads/eclipse-packages/.
 3. In Eclipse create new workspace C:/Eclipse/FusionPanel. Then exit Eclipse.
 4. Download this github project as a zip file and unzip it into C:/Eclipse/FusionPanel.
