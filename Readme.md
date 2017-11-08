@@ -1,4 +1,4 @@
-# Fusion-Panel
+# FusionPanel
 This source code is only for firmware versions **1.16 and later**.
 
 This is a modified version of the [PanelDueFirmware](https://github.com/dc42/PanelDueFirmware) for the PanelDue 3D printer user interface board and has been modified for use only with the [F400 3D Printer](http://fusion3design.com).
