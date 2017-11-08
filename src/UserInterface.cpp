@@ -608,7 +608,7 @@ void CreateControlTabFields(const ColourScheme& colours)
 		column += xyFieldWidth + fieldSpacing;
 	}
 	zprobeBuf[0] = 0;
-	mgr.AddField(zProbe = new TextField(row6p3 + labelRowAdjust, column, DISPLAY_X - column - margin, TextAlignment::Left, "P", zprobeBuf.c_str()));
+	//mgr.AddField(zProbe = new TextField(row6p3 + labelRowAdjust, column, DISPLAY_X - column - margin, TextAlignment::Left, "P", zprobeBuf.c_str()));
 
 	DisplayField::SetDefaultColours(colours.buttonTextColour, colours.notHomedButtonBackColour);
 	homeAllButton = AddIconButton(row7p7, 0, MAX_AXES + 2, IconHomeAll, evSendCommand, "G28");
@@ -1248,8 +1248,8 @@ namespace UI
 	// UIpdate the Z probe text
 	void UpdateZProbe(const char data[])
 	{
-		zprobeBuf.copy(data);
-		zProbe->SetChanged();
+		//zprobeBuf.copy(data);
+		// zProbe->SetChanged();
 	}
 
 	// Update the machine name
