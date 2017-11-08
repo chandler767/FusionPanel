@@ -17,7 +17,7 @@ This firmware is based off of version 1.17 of the PanelDueFirmware and it has be
 5. Load Eclipse and tell it to import the FusionPanel project.
 6. Configure the path to the tools in the project under C/C++ Build -> Settings -> Cross Settings.
   * Ensure it contains: C:\Arduino-1.5.8\hardware\tools\gcc-arm-none-eabi-4.8.3-2014q1\bin
-  * Ensure there is a copy of make on your PATH. In not add: C:\Arduino-1.5.8\hardware\arduino\sam\system\CMSIS\Examples\cmsis_example\gcc_arm
+  * Ensure there is a copy of make on your PATH. If not then add: C:\Arduino-1.5.8\hardware\arduino\sam\system\CMSIS\Examples\cmsis_example\gcc_arm
  7. Set the build target to **release-v3-4.3** and build.
 
 # Firmware Upload Instructions
