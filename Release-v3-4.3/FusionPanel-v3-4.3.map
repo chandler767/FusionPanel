@@ -1487,7 +1487,7 @@ LOAD e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/g
                 0x00400000                __flash_start__ = ORIGIN (rom)
                 0x00440000                __flash_end__ = (ORIGIN (rom) + 0x40000)
 
-.text           0x00400000    0x16d3c
+.text           0x00400000    0x16d5c
                 0x00400000                . = ALIGN (0x4)
                 0x00400000                _sfixed = .
  *(.vectors .vectors.*)
@@ -2469,715 +2469,715 @@ LOAD e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/g
                 0x00407af8       0xa0 ./src/UserInterface.o
                 0x00407af8                CreateCommonFields(ColourScheme const&)
  .text._Z15CreateMainPagesmRK12ColourScheme
-                0x00407b98      0x198 ./src/UserInterface.o
+                0x00407b98      0x1b4 ./src/UserInterface.o
                 0x00407b98                CreateMainPages(unsigned long, ColourScheme const&)
  .text._ZN2UI15GetNumLanguagesEv
-                0x00407d30        0x4 ./src/UserInterface.o
-                0x00407d30                UI::GetNumLanguages()
+                0x00407d4c        0x4 ./src/UserInterface.o
+                0x00407d4c                UI::GetNumLanguages()
  .text._ZN2UI21CheckSettingsAreSavedEv
-                0x00407d34       0x5c ./src/UserInterface.o
-                0x00407d34                UI::CheckSettingsAreSaved()
+                0x00407d50       0x5c ./src/UserInterface.o
+                0x00407d50                UI::CheckSettingsAreSaved()
  .text._ZN2UI15ShowFilesButtonEv
-                0x00407d90       0x58 ./src/UserInterface.o
-                0x00407d90                UI::ShowFilesButton()
+                0x00407dac       0x58 ./src/UserInterface.o
+                0x00407dac                UI::ShowFilesButton()
  .text._ZN2UI15ShowPauseButtonEv
-                0x00407de8       0x58 ./src/UserInterface.o
-                0x00407de8                UI::ShowPauseButton()
+                0x00407e04       0x58 ./src/UserInterface.o
+                0x00407e04                UI::ShowPauseButton()
  .text._ZN2UI26ShowResumeAndCancelButtonsEv
-                0x00407e40       0x58 ./src/UserInterface.o
-                0x00407e40                UI::ShowResumeAndCancelButtons()
+                0x00407e5c       0x58 ./src/UserInterface.o
+                0x00407e5c                UI::ShowResumeAndCancelButtons()
  .text._ZN2UI8ShowAxisEjb
-                0x00407e98       0x3c ./src/UserInterface.o
-                0x00407e98                UI::ShowAxis(unsigned int, bool)
+                0x00407eb4       0x3c ./src/UserInterface.o
+                0x00407eb4                UI::ShowAxis(unsigned int, bool)
  .text._Z15CreateMovePopupRK12ColourScheme
-                0x00407ed4      0x118 ./src/UserInterface.o
-                0x00407ed4                CreateMovePopup(ColourScheme const&)
+                0x00407ef0      0x118 ./src/UserInterface.o
+                0x00407ef0                CreateMovePopup(ColourScheme const&)
  .text._ZN2UI12CreateFieldsEmRK12ColourScheme
-                0x00407fec      0x138 ./src/UserInterface.o
-                0x00407fec                UI::CreateFields(unsigned long, ColourScheme const&)
+                0x00408008      0x138 ./src/UserInterface.o
+                0x00408008                UI::CreateFields(unsigned long, ColourScheme const&)
  .text._ZN2UI18UpdateAxisPositionEjf
-                0x00408124       0x1c ./src/UserInterface.o
-                0x00408124                UI::UpdateAxisPosition(unsigned int, float)
+                0x00408140       0x1c ./src/UserInterface.o
+                0x00408140                UI::UpdateAxisPosition(unsigned int, float)
  .text._ZN2UI24UpdateCurrentTemperatureEjf
-                0x00408140       0x18 ./src/UserInterface.o
-                0x00408140                UI::UpdateCurrentTemperature(unsigned int, float)
+                0x0040815c       0x18 ./src/UserInterface.o
+                0x0040815c                UI::UpdateCurrentTemperature(unsigned int, float)
  .text._ZN2UI10ShowHeaterEjb
-                0x00408158       0x58 ./src/UserInterface.o
-                0x00408158                UI::ShowHeater(unsigned int, bool)
+                0x00408174       0x58 ./src/UserInterface.o
+                0x00408174                UI::ShowHeater(unsigned int, bool)
  .text._ZN2UI18UpdateHeaterStatusEji
-                0x004081b0       0x5c ./src/UserInterface.o
-                0x004081b0                UI::UpdateHeaterStatus(unsigned int, int)
+                0x004081cc       0x5c ./src/UserInterface.o
+                0x004081cc                UI::UpdateHeaterStatus(unsigned int, int)
  .text._ZN2UI12ShowKeyboardEv
-                0x0040820c       0x30 ./src/UserInterface.o
-                0x0040820c                UI::ShowKeyboard()
+                0x00408228       0x30 ./src/UserInterface.o
+                0x00408228                UI::ShowKeyboard()
  .text._ZN2UI14PopupCancelledEv
-                0x0040823c       0x20 ./src/UserInterface.o
-                0x0040823c                UI::PopupCancelled()
+                0x00408258       0x20 ./src/UserInterface.o
+                0x00408258                UI::PopupCancelled()
  .text._ZN2UI9DoPollingEv
-                0x0040825c       0x18 ./src/UserInterface.o
-                0x0040825c                UI::DoPolling()
+                0x00408278       0x18 ./src/UserInterface.o
+                0x00408278                UI::DoPolling()
  .text._ZN2UI4SpinEv
-                0x00408274       0x24 ./src/UserInterface.o
-                0x00408274                UI::Spin()
+                0x00408290       0x24 ./src/UserInterface.o
+                0x00408290                UI::Spin()
  .text._ZN2UI20UpdatePrintingFieldsEv
-                0x00408298       0x84 ./src/UserInterface.o
-                0x00408298                UI::UpdatePrintingFields()
+                0x004082b4       0x84 ./src/UserInterface.o
+                0x004082b4                UI::UpdatePrintingFields()
  .text._ZN2UI23SetPrintProgressPercentEj
-                0x0040831c       0x14 ./src/UserInterface.o
-                0x0040831c                UI::SetPrintProgressPercent(unsigned int)
+                0x00408338       0x14 ./src/UserInterface.o
+                0x00408338                UI::SetPrintProgressPercent(unsigned int)
  .text._ZN2UI14UpdateGeometryEjb
-                0x00408330       0x48 ./src/UserInterface.o
-                0x00408330                UI::UpdateGeometry(unsigned int, bool)
+                0x0040834c       0x48 ./src/UserInterface.o
+                0x0040834c                UI::UpdateGeometry(unsigned int, bool)
  .text._ZN2UI17UpdateHomedStatusEib
-                0x00408378       0x44 ./src/UserInterface.o
-                0x00408378                UI::UpdateHomedStatus(int, bool)
+                0x00408394       0x44 ./src/UserInterface.o
+                0x00408394                UI::UpdateHomedStatus(int, bool)
  .text._ZN2UI12UpdateZProbeEPKc
-                0x004083bc       0x40 ./src/UserInterface.o
-                0x004083bc                UI::UpdateZProbe(char const*)
+                0x004083d8       0x40 ./src/UserInterface.o
+                0x004083d8                UI::UpdateZProbe(char const*)
  .text._ZN2UI17UpdateMachineNameEPKc
-                0x004083fc       0x40 ./src/UserInterface.o
-                0x004083fc                UI::UpdateMachineName(char const*)
+                0x00408418       0x40 ./src/UserInterface.o
+                0x00408418                UI::UpdateMachineName(char const*)
  .text._ZN2UI16UpdateFanPercentEi
-                0x0040843c       0x18 ./src/UserInterface.o
-                0x0040843c                UI::UpdateFanPercent(int)
+                0x00408458       0x18 ./src/UserInterface.o
+                0x00408458                UI::UpdateFanPercent(int)
  .text._ZN2UI23UpdateActiveTemperatureEji
-                0x00408454       0x18 ./src/UserInterface.o
-                0x00408454                UI::UpdateActiveTemperature(unsigned int, int)
+                0x00408470       0x18 ./src/UserInterface.o
+                0x00408470                UI::UpdateActiveTemperature(unsigned int, int)
  .text._ZN2UI24UpdateStandbyTemperatureEji
-                0x0040846c       0x18 ./src/UserInterface.o
-                0x0040846c                UI::UpdateStandbyTemperature(unsigned int, int)
+                0x00408488       0x18 ./src/UserInterface.o
+                0x00408488                UI::UpdateStandbyTemperature(unsigned int, int)
  .text._ZN2UI21UpdateExtrusionFactorEji
-                0x00408484       0x18 ./src/UserInterface.o
-                0x00408484                UI::UpdateExtrusionFactor(unsigned int, int)
+                0x004084a0       0x18 ./src/UserInterface.o
+                0x004084a0                UI::UpdateExtrusionFactor(unsigned int, int)
  .text._ZN2UI18UpdateSpeedPercentEi
-                0x0040849c       0x18 ./src/UserInterface.o
-                0x0040849c                UI::UpdateSpeedPercent(int)
+                0x004084b8       0x18 ./src/UserInterface.o
+                0x004084b8                UI::UpdateSpeedPercent(int)
  .text._ZN2UI12ProcessAlertEPKc
-                0x004084b4       0x68 ./src/UserInterface.o
-                0x004084b4                UI::ProcessAlert(char const*)
+                0x004084d0       0x68 ./src/UserInterface.o
+                0x004084d0                UI::ProcessAlert(char const*)
  .text._ZN2UI12FileSelectedEPKc
-                0x0040851c       0x7c ./src/UserInterface.o
-                0x0040851c                UI::FileSelected(char const*)
+                0x00408538       0x7c ./src/UserInterface.o
+                0x00408538                UI::FileSelected(char const*)
  .text._ZN2UI22UpdateFileObjectHeightEf
-                0x00408598       0x14 ./src/UserInterface.o
-                0x00408598                UI::UpdateFileObjectHeight(float)
+                0x004085b4       0x14 ./src/UserInterface.o
+                0x004085b4                UI::UpdateFileObjectHeight(float)
  .text._ZN2UI21UpdateFileLayerHeightEf
-                0x004085ac       0x14 ./src/UserInterface.o
-                0x004085ac                UI::UpdateFileLayerHeight(float)
+                0x004085c8       0x14 ./src/UserInterface.o
+                0x004085c8                UI::UpdateFileLayerHeight(float)
  .text._ZN2UI14UpdateFileSizeEi
-                0x004085c0       0x14 ./src/UserInterface.o
-                0x004085c0                UI::UpdateFileSize(int)
+                0x004085dc       0x14 ./src/UserInterface.o
+                0x004085dc                UI::UpdateFileSize(int)
  .text._ZN2UI18UpdateFileFilamentEi
-                0x004085d4       0x14 ./src/UserInterface.o
-                0x004085d4                UI::UpdateFileFilament(int)
+                0x004085f0       0x14 ./src/UserInterface.o
+                0x004085f0                UI::UpdateFileFilament(int)
  .text._ZN2UI20IsDisplayingFileInfoEv
-                0x004085e8       0x10 ./src/UserInterface.o
-                0x004085e8                UI::IsDisplayingFileInfo()
+                0x00408604       0x10 ./src/UserInterface.o
+                0x00408604                UI::IsDisplayingFileInfo()
  .text._ZN2UI23FirmwareFeaturesChangedEm
-                0x004085f8       0x2c ./src/UserInterface.o
-                0x004085f8                UI::FirmwareFeaturesChanged(unsigned long)
+                0x00408614       0x2c ./src/UserInterface.o
+                0x00408614                UI::FirmwareFeaturesChanged(unsigned long)
  .text._ZN2UI20OnButtonPressTimeoutEv
-                0x00408624       0x18 ./src/UserInterface.o
-                0x00408624                UI::OnButtonPressTimeout()
+                0x00408640       0x18 ./src/UserInterface.o
+                0x00408640                UI::OnButtonPressTimeout()
  .text._ZN2UI20UpdateFilesListTitleEijb
-                0x0040863c       0x84 ./src/UserInterface.o
-                0x0040863c                UI::UpdateFilesListTitle(int, unsigned int, bool)
+                0x00408658       0x84 ./src/UserInterface.o
+                0x00408658                UI::UpdateFilesListTitle(int, unsigned int, bool)
  .text._ZN2UI14FileListLoadedEi
-                0x004086c0       0x30 ./src/UserInterface.o
-                0x004086c0                UI::FileListLoaded(int)
+                0x004086dc       0x30 ./src/UserInterface.o
+                0x004086dc                UI::FileListLoaded(int)
  .text._ZN2UI20EnableFileNavButtonsEbbb
-                0x004086f0       0x40 ./src/UserInterface.o
-                0x004086f0                UI::EnableFileNavButtons(bool, bool, bool)
+                0x0040870c       0x40 ./src/UserInterface.o
+                0x0040870c                UI::EnableFileNavButtons(bool, bool, bool)
  .text._ZN2UI19GetNumScrolledFilesEv
-                0x00408730        0x4 ./src/UserInterface.o
-                0x00408730                UI::GetNumScrolledFiles()
+                0x0040874c        0x4 ./src/UserInterface.o
+                0x0040874c                UI::GetNumScrolledFiles()
  .text._ZN2UI11SetNumToolsEj
-                0x00408734       0x30 ./src/UserInterface.o
-                0x00408734                UI::SetNumTools(unsigned int)
+                0x00408750       0x30 ./src/UserInterface.o
+                0x00408750                UI::SetNumTools(unsigned int)
  .text._ZN2UI17SetBabystepOffsetEf
-                0x00408764       0x14 ./src/UserInterface.o
-                0x00408764                UI::SetBabystepOffset(float)
+                0x00408780       0x14 ./src/UserInterface.o
+                0x00408780                UI::SetBabystepOffset(float)
  .text._ZN6StringILj50EE7catFromEPKc
-                0x00408778       0x1e ./src/UserInterface.o
-                0x00408778                String<50u>::catFrom(char const*)
- *fill*         0x00408796        0x2 
+                0x00408794       0x1e ./src/UserInterface.o
+                0x00408794                String<50u>::catFrom(char const*)
+ *fill*         0x004087b2        0x2 
  .text._ZN2UI25UpdateFileGeneratedByTextEPKc
-                0x00408798       0x2c ./src/UserInterface.o
-                0x00408798                UI::UpdateFileGeneratedByText(char const*)
+                0x004087b4       0x2c ./src/UserInterface.o
+                0x004087b4                UI::UpdateFileGeneratedByText(char const*)
  .text._ZN6StringILj50EE4catfEPKcz
-                0x004087c4       0x40 ./src/UserInterface.o
-                0x004087c4                String<50u>::catf(char const*, ...)
+                0x004087e0       0x40 ./src/UserInterface.o
+                0x004087e0                String<50u>::catf(char const*, ...)
  .text._ZN2UIL14AppendTimeLeftEi
-                0x00408804       0x68 ./src/UserInterface.o
+                0x00408820       0x68 ./src/UserInterface.o
  .text._ZN2UI15UpdateTimesLeftEjj
-                0x0040886c       0x74 ./src/UserInterface.o
-                0x0040886c                UI::UpdateTimesLeft(unsigned int, unsigned int)
+                0x00408888       0x74 ./src/UserInterface.o
+                0x00408888                UI::UpdateTimesLeft(unsigned int, unsigned int)
  .text._ZN6StringILj40EE4copyEPKc
-                0x004088e0       0x24 ./src/UserInterface.o
-                0x004088e0                String<40u>::copy(char const*)
+                0x004088fc       0x24 ./src/UserInterface.o
+                0x004088fc                String<40u>::copy(char const*)
  .text._ZN2UI23PrintingFilenameChangedEPKc
-                0x00408904       0x54 ./src/UserInterface.o
-                0x00408904                UI::PrintingFilenameChanged(char const*)
+                0x00408920       0x54 ./src/UserInterface.o
+                0x00408920                UI::PrintingFilenameChanged(char const*)
  .text.startup._GLOBAL__sub_I_fwVersionField
-                0x00408958       0x84 ./src/UserInterface.o
+                0x00408974       0x84 ./src/UserInterface.o
  .text._ZN2UI10ChangePageEP10ButtonBase
-                0x004089dc       0xf4 ./src/UserInterface.o
-                0x004089dc                UI::ChangePage(ButtonBase*)
+                0x004089f8       0xf4 ./src/UserInterface.o
+                0x004089f8                UI::ChangePage(ButtonBase*)
  .text._ZN2UI12ChangeStatusE13PrinterStatusS0_
-                0x00408ad0       0xa8 ./src/UserInterface.o
-                0x00408ad0                UI::ChangeStatus(PrinterStatus, PrinterStatus)
+                0x00408aec       0xa8 ./src/UserInterface.o
+                0x00408aec                UI::ChangeStatus(PrinterStatus, PrinterStatus)
  .text._ZN2UI12PrintStartedEv
-                0x00408b78       0x14 ./src/UserInterface.o
-                0x00408b78                UI::PrintStarted()
+                0x00408b94       0x14 ./src/UserInterface.o
+                0x00408b94                UI::PrintStarted()
  .text._ZN2UI15ShowDefaultPageEv
-                0x00408b8c       0x14 ./src/UserInterface.o
-                0x00408b8c                UI::ShowDefaultPage()
+                0x00408ba8       0x14 ./src/UserInterface.o
+                0x00408ba8                UI::ShowDefaultPage()
  .text._ZN2UI12ProcessTouchE11ButtonPress
-                0x00408ba0      0x9b8 ./src/UserInterface.o
-                0x00408ba0                UI::ProcessTouch(ButtonPress)
+                0x00408bbc      0x9b8 ./src/UserInterface.o
+                0x00408bbc                UI::ProcessTouch(ButtonPress)
  .text._ZN2UI24ProcessTouchOutsidePopupE11ButtonPress
-                0x00409558      0x13c ./src/UserInterface.o
-                0x00409558                UI::ProcessTouchOutsidePopup(ButtonPress)
- .text          0x00409694      0x370 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_addsubdf3.o)
-                0x00409694                __aeabi_drsub
-                0x0040969c                __aeabi_dsub
-                0x0040969c                __subdf3
-                0x004096a0                __aeabi_dadd
-                0x004096a0                __adddf3
-                0x00409918                __floatunsidf
-                0x00409918                __aeabi_ui2d
-                0x00409938                __floatsidf
-                0x00409938                __aeabi_i2d
-                0x0040995c                __aeabi_f2d
-                0x0040995c                __extendsfdf2
-                0x00409998                __floatundidf
-                0x00409998                __aeabi_ul2d
-                0x004099a8                __floatdidf
-                0x004099a8                __aeabi_l2d
- .text          0x00409a04      0x424 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_muldivdf3.o)
-                0x00409a04                __aeabi_dmul
-                0x00409a04                __muldf3
-                0x00409c58                __divdf3
-                0x00409c58                __aeabi_ddiv
- .text          0x00409e28       0x50 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_fixdfsi.o)
-                0x00409e28                __aeabi_d2iz
-                0x00409e28                __fixdfsi
- .text          0x00409e78       0x40 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_fixunsdfsi.o)
-                0x00409e78                __aeabi_d2uiz
-                0x00409e78                __fixunsdfsi
- .text          0x00409eb8       0xa0 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_truncdfsf2.o)
-                0x00409eb8                __truncdfsf2
-                0x00409eb8                __aeabi_d2f
- .text          0x00409f58      0x21c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_addsubsf3.o)
-                0x00409f58                __aeabi_frsub
-                0x00409f60                __subsf3
-                0x00409f60                __aeabi_fsub
-                0x00409f64                __aeabi_fadd
-                0x00409f64                __addsf3
-                0x0040a0c4                __aeabi_ui2f
-                0x0040a0c4                __floatunsisf
-                0x0040a0cc                __aeabi_i2f
-                0x0040a0cc                __floatsisf
-                0x0040a0e8                __aeabi_ul2f
-                0x0040a0e8                __floatundisf
-                0x0040a0f8                __aeabi_l2f
-                0x0040a0f8                __floatdisf
- .text          0x0040a174      0x2a0 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_muldivsf3.o)
-                0x0040a174                __mulsf3
-                0x0040a174                __aeabi_fmul
-                0x0040a2dc                __aeabi_fdiv
-                0x0040a2dc                __divsf3
- .text          0x0040a414       0xec e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_cmpsf2.o)
-                0x0040a414                __gesf2
-                0x0040a414                __gtsf2
-                0x0040a41c                __lesf2
-                0x0040a41c                __ltsf2
-                0x0040a424                __nesf2
-                0x0040a424                __eqsf2
-                0x0040a424                __cmpsf2
-                0x0040a484                __aeabi_cfrcmple
-                0x0040a48c                __aeabi_cfcmpeq
-                0x0040a48c                __aeabi_cfcmple
-                0x0040a49c                __aeabi_fcmpeq
-                0x0040a4b0                __aeabi_fcmplt
-                0x0040a4c4                __aeabi_fcmple
-                0x0040a4d8                __aeabi_fcmpge
-                0x0040a4ec                __aeabi_fcmpgt
- .text          0x0040a500       0x2c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_unordsf2.o)
-                0x0040a500                __unordsf2
-                0x0040a500                __aeabi_fcmpun
- .text          0x0040a52c       0x4c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_fixsfsi.o)
-                0x0040a52c                __aeabi_f2iz
-                0x0040a52c                __fixsfsi
- .text          0x0040a578       0x40 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_fixunssfsi.o)
-                0x0040a578                __fixunssfsi
-                0x0040a578                __aeabi_f2uiz
+                0x00409574      0x13c ./src/UserInterface.o
+                0x00409574                UI::ProcessTouchOutsidePopup(ButtonPress)
+ .text          0x004096b0      0x370 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_addsubdf3.o)
+                0x004096b0                __aeabi_drsub
+                0x004096b8                __aeabi_dsub
+                0x004096b8                __subdf3
+                0x004096bc                __aeabi_dadd
+                0x004096bc                __adddf3
+                0x00409934                __floatunsidf
+                0x00409934                __aeabi_ui2d
+                0x00409954                __floatsidf
+                0x00409954                __aeabi_i2d
+                0x00409978                __aeabi_f2d
+                0x00409978                __extendsfdf2
+                0x004099b4                __floatundidf
+                0x004099b4                __aeabi_ul2d
+                0x004099c4                __floatdidf
+                0x004099c4                __aeabi_l2d
+ .text          0x00409a20      0x424 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_muldivdf3.o)
+                0x00409a20                __aeabi_dmul
+                0x00409a20                __muldf3
+                0x00409c74                __divdf3
+                0x00409c74                __aeabi_ddiv
+ .text          0x00409e44       0x50 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_fixdfsi.o)
+                0x00409e44                __aeabi_d2iz
+                0x00409e44                __fixdfsi
+ .text          0x00409e94       0x40 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_fixunsdfsi.o)
+                0x00409e94                __aeabi_d2uiz
+                0x00409e94                __fixunsdfsi
+ .text          0x00409ed4       0xa0 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_truncdfsf2.o)
+                0x00409ed4                __truncdfsf2
+                0x00409ed4                __aeabi_d2f
+ .text          0x00409f74      0x21c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_addsubsf3.o)
+                0x00409f74                __aeabi_frsub
+                0x00409f7c                __subsf3
+                0x00409f7c                __aeabi_fsub
+                0x00409f80                __aeabi_fadd
+                0x00409f80                __addsf3
+                0x0040a0e0                __aeabi_ui2f
+                0x0040a0e0                __floatunsisf
+                0x0040a0e8                __aeabi_i2f
+                0x0040a0e8                __floatsisf
+                0x0040a104                __aeabi_ul2f
+                0x0040a104                __floatundisf
+                0x0040a114                __aeabi_l2f
+                0x0040a114                __floatdisf
+ .text          0x0040a190      0x2a0 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_muldivsf3.o)
+                0x0040a190                __mulsf3
+                0x0040a190                __aeabi_fmul
+                0x0040a2f8                __aeabi_fdiv
+                0x0040a2f8                __divsf3
+ .text          0x0040a430       0xec e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_cmpsf2.o)
+                0x0040a430                __gesf2
+                0x0040a430                __gtsf2
+                0x0040a438                __lesf2
+                0x0040a438                __ltsf2
+                0x0040a440                __nesf2
+                0x0040a440                __eqsf2
+                0x0040a440                __cmpsf2
+                0x0040a4a0                __aeabi_cfrcmple
+                0x0040a4a8                __aeabi_cfcmpeq
+                0x0040a4a8                __aeabi_cfcmple
+                0x0040a4b8                __aeabi_fcmpeq
+                0x0040a4cc                __aeabi_fcmplt
+                0x0040a4e0                __aeabi_fcmple
+                0x0040a4f4                __aeabi_fcmpge
+                0x0040a508                __aeabi_fcmpgt
+ .text          0x0040a51c       0x2c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_unordsf2.o)
+                0x0040a51c                __unordsf2
+                0x0040a51c                __aeabi_fcmpun
+ .text          0x0040a548       0x4c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_fixsfsi.o)
+                0x0040a548                __aeabi_f2iz
+                0x0040a548                __fixsfsi
+ .text          0x0040a594       0x40 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_fixunssfsi.o)
+                0x0040a594                __fixunssfsi
+                0x0040a594                __aeabi_f2uiz
  .text.__libc_init_array
-                0x0040a5b8       0x4c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-init.o)
-                0x0040a5b8                __libc_init_array
- .text.memcmp   0x0040a604       0x1e e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memcmp.o)
-                0x0040a604                memcmp
- .text.memcpy   0x0040a622       0x12 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memcpy-stub.o)
-                0x0040a622                memcpy
- .text.memset   0x0040a634       0x10 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memset.o)
-                0x0040a634                memset
+                0x0040a5d4       0x4c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-init.o)
+                0x0040a5d4                __libc_init_array
+ .text.memcmp   0x0040a620       0x1e e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memcmp.o)
+                0x0040a620                memcmp
+ .text.memcpy   0x0040a63e       0x12 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memcpy-stub.o)
+                0x0040a63e                memcpy
+ .text.memset   0x0040a650       0x10 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memset.o)
+                0x0040a650                memset
  .text.snprintf
-                0x0040a644       0x64 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-snprintf.o)
-                0x0040a644                sniprintf
-                0x0040a644                snprintf
+                0x0040a660       0x64 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-snprintf.o)
+                0x0040a660                sniprintf
+                0x0040a660                snprintf
  .text.strcasecmp
-                0x0040a6a8       0x3c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strcasecmp.o)
-                0x0040a6a8                strcasecmp
- .text.strchr   0x0040a6e4       0x1a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strchr.o)
-                0x0040a6e4                strchr
- .text          0x0040a6fe       0x14 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strcmp.o)
-                0x0040a6fe                strcmp
- .text.strlen   0x0040a712       0x10 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strlen.o)
-                0x0040a712                strlen
- .text.strncmp  0x0040a722       0x2e e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strncmp.o)
-                0x0040a722                strncmp
- .text.match    0x0040a750       0x28 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
- .text.sulp     0x0040a778       0x3e e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
- *fill*         0x0040a7b6        0x2 
+                0x0040a6c4       0x3c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strcasecmp.o)
+                0x0040a6c4                strcasecmp
+ .text.strchr   0x0040a700       0x1a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strchr.o)
+                0x0040a700                strchr
+ .text          0x0040a71a       0x14 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strcmp.o)
+                0x0040a71a                strcmp
+ .text.strlen   0x0040a72e       0x10 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strlen.o)
+                0x0040a72e                strlen
+ .text.strncmp  0x0040a73e       0x2e e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strncmp.o)
+                0x0040a73e                strncmp
+ .text.match    0x0040a76c       0x28 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
+ .text.sulp     0x0040a794       0x3e e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
+ *fill*         0x0040a7d2        0x6 
  .text._strtod_r
-                0x0040a7b8      0xc38 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
-                0x0040a7b8                _strtod_r
- .text.strtof   0x0040b3f0       0x30 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
-                0x0040b3f0                strtof
+                0x0040a7d8      0xc38 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
+                0x0040a7d8                _strtod_r
+ .text.strtof   0x0040b410       0x30 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
+                0x0040b410                strtof
  .text._strtol_r
-                0x0040b420      0x104 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtol.o)
-                0x0040b420                _strtol_r
- .text.strtol   0x0040b524       0x1c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtol.o)
-                0x0040b524                strtol
+                0x0040b440      0x104 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtol.o)
+                0x0040b440                _strtol_r
+ .text.strtol   0x0040b544       0x1c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtol.o)
+                0x0040b544                strtol
  .text._strtoul_r
-                0x0040b540       0xf0 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtoul.o)
-                0x0040b540                _strtoul_r
- .text.strtoul  0x0040b630       0x1c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtoul.o)
-                0x0040b630                strtoul
+                0x0040b560       0xf0 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtoul.o)
+                0x0040b560                _strtoul_r
+ .text.strtoul  0x0040b650       0x1c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtoul.o)
+                0x0040b650                strtoul
  .text.__ssputs_r
-                0x0040b64c       0xb8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-svfprintf.o)
-                0x0040b64c                __ssputs_r
+                0x0040b66c       0xb8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-svfprintf.o)
+                0x0040b66c                __ssputs_r
  .text._svfprintf_r
-                0x0040b704      0x1dc e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-svfprintf.o)
-                0x0040b704                _svfiprintf_r
-                0x0040b704                _svfprintf_r
+                0x0040b724      0x1dc e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-svfprintf.o)
+                0x0040b724                _svfiprintf_r
+                0x0040b724                _svfprintf_r
  .text._printf_common
-                0x0040b8e0       0xe4 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-vfprintf_i.o)
-                0x0040b8e0                _printf_common
+                0x0040b900       0xe4 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-vfprintf_i.o)
+                0x0040b900                _printf_common
  .text._printf_i
-                0x0040b9c4      0x228 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-vfprintf_i.o)
-                0x0040b9c4                _printf_i
+                0x0040b9e4      0x228 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-vfprintf_i.o)
+                0x0040b9e4                _printf_i
  .text._vsnprintf_r
-                0x0040bbec       0x52 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-vsnprintf.o)
-                0x0040bbec                _vsniprintf_r
-                0x0040bbec                _vsnprintf_r
- *fill*         0x0040bc3e        0x2 
+                0x0040bc0c       0x52 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-vsnprintf.o)
+                0x0040bc0c                _vsniprintf_r
+                0x0040bc0c                _vsnprintf_r
+ *fill*         0x0040bc5e        0x2 
  .text.vsnprintf
-                0x0040bc40       0x20 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-vsnprintf.o)
-                0x0040bc40                vsniprintf
-                0x0040bc40                vsnprintf
- .text.rshift   0x0040bc60       0x6a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-gdtoa-gethex.o)
+                0x0040bc60       0x20 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-vsnprintf.o)
+                0x0040bc60                vsniprintf
+                0x0040bc60                vsnprintf
+ .text.rshift   0x0040bc80       0x6a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-gdtoa-gethex.o)
  .text.__hexdig_fun
-                0x0040bcca       0x2a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-gdtoa-gethex.o)
-                0x0040bcca                __hexdig_fun
+                0x0040bcea       0x2a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-gdtoa-gethex.o)
+                0x0040bcea                __hexdig_fun
  .text.__gethex
-                0x0040bcf4      0x45e e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-gdtoa-gethex.o)
-                0x0040bcf4                __gethex
- .text.L_shift  0x0040c152       0x26 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-gdtoa-hexnan.o)
+                0x0040bd14      0x45e e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-gdtoa-gethex.o)
+                0x0040bd14                __gethex
+ .text.L_shift  0x0040c172       0x26 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-gdtoa-hexnan.o)
  .text.__hexnan
-                0x0040c178      0x120 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-gdtoa-hexnan.o)
-                0x0040c178                __hexnan
+                0x0040c198      0x120 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-gdtoa-hexnan.o)
+                0x0040c198                __hexnan
  .text._localeconv_r
-                0x0040c298        0x8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-locale.o)
-                0x0040c298                _localeconv_r
- .text.memchr   0x0040c2a0       0x1e e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memchr-stub.o)
-                0x0040c2a0                memchr
- .text.memmove  0x0040c2be       0x36 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memmove.o)
-                0x0040c2be                memmove
- .text._Balloc  0x0040c2f4       0x6a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c2f4                _Balloc
- .text._Bfree   0x0040c35e       0x2e e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c35e                _Bfree
+                0x0040c2b8        0x8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-locale.o)
+                0x0040c2b8                _localeconv_r
+ .text.memchr   0x0040c2c0       0x1e e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memchr-stub.o)
+                0x0040c2c0                memchr
+ .text.memmove  0x0040c2de       0x36 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memmove.o)
+                0x0040c2de                memmove
+ .text._Balloc  0x0040c314       0x6a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c314                _Balloc
+ .text._Bfree   0x0040c37e       0x2e e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c37e                _Bfree
  .text.__multadd
-                0x0040c38c       0x74 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c38c                __multadd
- .text.__s2b    0x0040c400       0x84 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c400                __s2b
+                0x0040c3ac       0x74 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c3ac                __multadd
+ .text.__s2b    0x0040c420       0x84 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c420                __s2b
  .text.__hi0bits
-                0x0040c484       0x40 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c484                __hi0bits
+                0x0040c4a4       0x40 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c4a4                __hi0bits
  .text.__lo0bits
-                0x0040c4c4       0x5a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c4c4                __lo0bits
- .text.__i2b    0x0040c51e       0x12 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c51e                __i2b
+                0x0040c4e4       0x5a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c4e4                __lo0bits
+ .text.__i2b    0x0040c53e       0x12 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c53e                __i2b
  .text.__multiply
-                0x0040c530      0x130 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c530                __multiply
+                0x0040c550      0x130 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c550                __multiply
  .text.__pow5mult
-                0x0040c660       0x9c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c660                __pow5mult
+                0x0040c680       0x9c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c680                __pow5mult
  .text.__lshift
-                0x0040c6fc       0xa6 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c6fc                __lshift
- .text.__mcmp   0x0040c7a2       0x3a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c7a2                __mcmp
- .text.__mdiff  0x0040c7dc       0xbc e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c7dc                __mdiff
- .text.__ulp    0x0040c898       0x44 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c898                __ulp
- .text.__b2d    0x0040c8dc       0xa6 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c8dc                __b2d
- .text.__d2b    0x0040c982       0xa4 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040c982                __d2b
- .text.__ratio  0x0040ca26       0x4a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040ca26                __ratio
+                0x0040c71c       0xa6 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c71c                __lshift
+ .text.__mcmp   0x0040c7c2       0x3a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c7c2                __mcmp
+ .text.__mdiff  0x0040c7fc       0xbc e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c7fc                __mdiff
+ .text.__ulp    0x0040c8b8       0x44 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c8b8                __ulp
+ .text.__b2d    0x0040c8fc       0xa6 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c8fc                __b2d
+ .text.__d2b    0x0040c9a2       0xa4 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040c9a2                __d2b
+ .text.__ratio  0x0040ca46       0x4a e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040ca46                __ratio
  .text.__copybits
-                0x0040ca70       0x32 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040ca70                __copybits
+                0x0040ca90       0x32 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040ca90                __copybits
  .text.__any_on
-                0x0040caa2       0x48 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x0040caa2                __any_on
+                0x0040cac2       0x48 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x0040cac2                __any_on
  .text._calloc_r
-                0x0040caea       0x1c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-nano-callocr.o)
-                0x0040caea                _calloc_r
- *fill*         0x0040cb06        0x2 
- .text._free_r  0x0040cb08       0x88 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-nano-freer.o)
-                0x0040cb08                _free_r
+                0x0040cb0a       0x1c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-nano-callocr.o)
+                0x0040cb0a                _calloc_r
+ *fill*         0x0040cb26        0x2 
+ .text._free_r  0x0040cb28       0x88 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-nano-freer.o)
+                0x0040cb28                _free_r
  .text._malloc_r
-                0x0040cb90       0xa8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-nano-mallocr.o)
-                0x0040cb90                _malloc_r
+                0x0040cbb0       0xa8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-nano-mallocr.o)
+                0x0040cbb0                _malloc_r
  .text._realloc_r
-                0x0040cc38       0x4c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-nano-reallocr.o)
-                0x0040cc38                _realloc_r
+                0x0040cc58       0x4c e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-nano-reallocr.o)
+                0x0040cc58                _realloc_r
  .text.__fpclassifyd
-                0x0040cc84       0x44 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-s_fpclassify.o)
-                0x0040cc84                __fpclassifyd
- .text._sbrk_r  0x0040ccc8       0x20 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-sbrkr.o)
-                0x0040ccc8                _sbrk_r
- .text.nanf     0x0040cce8        0x8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-sf_nan.o)
-                0x0040cce8                nanf
- .text.malloc   0x0040ccf0       0x10 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-malloc.o)
-                0x0040ccf0                malloc
+                0x0040cca4       0x44 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-s_fpclassify.o)
+                0x0040cca4                __fpclassifyd
+ .text._sbrk_r  0x0040cce8       0x20 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-sbrkr.o)
+                0x0040cce8                _sbrk_r
+ .text.nanf     0x0040cd08        0x8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-sf_nan.o)
+                0x0040cd08                nanf
+ .text.malloc   0x0040cd10       0x10 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-malloc.o)
+                0x0040cd10                malloc
  .text._malloc_usable_size_r
-                0x0040cd00       0x12 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-nano-msizer.o)
-                0x0040cd00                _malloc_usable_size_r
- *fill*         0x0040cd12        0x2 
- .text          0x0040cd14      0x110 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_cmpdf2.o)
-                0x0040cd14                __gtdf2
-                0x0040cd14                __gedf2
-                0x0040cd1c                __ltdf2
-                0x0040cd1c                __ledf2
-                0x0040cd24                __nedf2
-                0x0040cd24                __eqdf2
-                0x0040cd24                __cmpdf2
-                0x0040cda0                __aeabi_cdrcmple
-                0x0040cdb0                __aeabi_cdcmpeq
-                0x0040cdb0                __aeabi_cdcmple
-                0x0040cdc0                __aeabi_dcmpeq
-                0x0040cdd4                __aeabi_dcmplt
-                0x0040cde8                __aeabi_dcmple
-                0x0040cdfc                __aeabi_dcmpge
-                0x0040ce10                __aeabi_dcmpgt
+                0x0040cd20       0x12 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-nano-msizer.o)
+                0x0040cd20                _malloc_usable_size_r
+ *fill*         0x0040cd32        0x2 
+ .text          0x0040cd34      0x110 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m\libgcc.a(_arm_cmpdf2.o)
+                0x0040cd34                __gtdf2
+                0x0040cd34                __gedf2
+                0x0040cd3c                __ltdf2
+                0x0040cd3c                __ledf2
+                0x0040cd44                __nedf2
+                0x0040cd44                __eqdf2
+                0x0040cd44                __cmpdf2
+                0x0040cdc0                __aeabi_cdrcmple
+                0x0040cdd0                __aeabi_cdcmpeq
+                0x0040cdd0                __aeabi_cdcmple
+                0x0040cde0                __aeabi_dcmpeq
+                0x0040cdf4                __aeabi_dcmplt
+                0x0040ce08                __aeabi_dcmple
+                0x0040ce1c                __aeabi_dcmpge
+                0x0040ce30                __aeabi_dcmpgt
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.rodata .rodata* .gnu.linkonce.r.*)
  .rodata.IconPaletteDark
-                0x0040ce24       0x20 ./src/Icons/HomeIcons.o
-                0x0040ce24                IconPaletteDark
- .rodata.IconPaletteLight
                 0x0040ce44       0x20 ./src/Icons/HomeIcons.o
-                0x0040ce44                IconPaletteLight
+                0x0040ce44                IconPaletteDark
+ .rodata.IconPaletteLight
+                0x0040ce64       0x20 ./src/Icons/HomeIcons.o
+                0x0040ce64                IconPaletteLight
  .rodata.IconHomeAll
-                0x0040ce64      0x109 ./src/Icons/HomeIcons.o
-                0x0040ce64                IconHomeAll
+                0x0040ce84      0x109 ./src/Icons/HomeIcons.o
+                0x0040ce84                IconHomeAll
  .rodata.IconHomeZ
-                0x0040cf6d      0x109 ./src/Icons/HomeIcons.o
-                0x0040cf6d                IconHomeZ
+                0x0040cf8d      0x109 ./src/Icons/HomeIcons.o
+                0x0040cf8d                IconHomeZ
  .rodata.IconHomeU
-                0x0040d076      0x109 ./src/Icons/HomeIcons.o
-                0x0040d076                IconHomeU
+                0x0040d096      0x109 ./src/Icons/HomeIcons.o
+                0x0040d096                IconHomeU
  .rodata.IconHomeX
-                0x0040d17f      0x109 ./src/Icons/HomeIcons.o
-                0x0040d17f                IconHomeX
+                0x0040d19f      0x109 ./src/Icons/HomeIcons.o
+                0x0040d19f                IconHomeX
  .rodata.IconHomeY
-                0x0040d288      0x109 ./src/Icons/HomeIcons.o
-                0x0040d288                IconHomeY
+                0x0040d2a8      0x109 ./src/Icons/HomeIcons.o
+                0x0040d2a8                IconHomeY
  .rodata.IconBedComp
-                0x0040d391      0x109 ./src/Icons/HomeIcons.o
-                0x0040d391                IconBedComp
+                0x0040d3b1      0x109 ./src/Icons/HomeIcons.o
+                0x0040d3b1                IconBedComp
  .rodata.IconDown
-                0x0040d49a       0xb5 ./src/Icons/KeyIcons.o
-                0x0040d49a                IconDown
+                0x0040d4ba       0xb5 ./src/Icons/KeyIcons.o
+                0x0040d4ba                IconDown
  .rodata.IconEnter
-                0x0040d54f      0x13d ./src/Icons/KeyIcons.o
-                0x0040d54f                IconEnter
+                0x0040d56f      0x13d ./src/Icons/KeyIcons.o
+                0x0040d56f                IconEnter
  .rodata.IconBackspace
-                0x0040d68c       0xfe ./src/Icons/KeyIcons.o
-                0x0040d68c                IconBackspace
+                0x0040d6ac       0xfe ./src/Icons/KeyIcons.o
+                0x0040d6ac                IconBackspace
  .rodata.IconUp
-                0x0040d78a       0xb5 ./src/Icons/KeyIcons.o
-                0x0040d78a                IconUp
+                0x0040d7aa       0xb5 ./src/Icons/KeyIcons.o
+                0x0040d7aa                IconUp
  .rodata.IconFiles
-                0x0040d83f      0x133 ./src/Icons/MiscIcons.o
-                0x0040d83f                IconFiles
+                0x0040d85f      0x133 ./src/Icons/MiscIcons.o
+                0x0040d85f                IconFiles
  .rodata.IconCancel
-                0x0040d972       0xdf ./src/Icons/MiscIcons.o
-                0x0040d972                IconCancel
+                0x0040d992       0xdf ./src/Icons/MiscIcons.o
+                0x0040d992                IconCancel
  .rodata.IconTrash
-                0x0040da51       0xb5 ./src/Icons/MiscIcons.o
-                0x0040da51                IconTrash
+                0x0040da71       0xb5 ./src/Icons/MiscIcons.o
+                0x0040da71                IconTrash
  .rodata.IconOk
-                0x0040db06       0xbf ./src/Icons/MiscIcons.o
-                0x0040db06                IconOk
+                0x0040db26       0xbf ./src/Icons/MiscIcons.o
+                0x0040db26                IconOk
  .rodata.IconKeyboard
-                0x0040dbc5      0x1a6 ./src/Icons/MiscIcons.o
-                0x0040dbc5                IconKeyboard
- *fill*         0x0040dd6b        0x1 
+                0x0040dbe5      0x1a6 ./src/Icons/MiscIcons.o
+                0x0040dbe5                IconKeyboard
+ *fill*         0x0040dd8b        0x1 
  .rodata.FusionLogo
-                0x0040dd6c     0x3cf0 ./src/Icons/MiscIcons.o
-                0x0040dd6c                FusionLogo
+                0x0040dd8c     0x3cf0 ./src/Icons/MiscIcons.o
+                0x0040dd8c                FusionLogo
  .rodata.IconBed
-                0x00411a5c       0xd4 ./src/Icons/NozzleIcons.o
-                0x00411a5c                IconBed
+                0x00411a7c       0xd4 ./src/Icons/NozzleIcons.o
+                0x00411a7c                IconBed
  .rodata.IconNozzle1
-                0x00411b30       0xdf ./src/Icons/NozzleIcons.o
-                0x00411b30                IconNozzle1
+                0x00411b50       0xdf ./src/Icons/NozzleIcons.o
+                0x00411b50                IconNozzle1
  .rodata.IconNozzle2
-                0x00411c0f       0xdf ./src/Icons/NozzleIcons.o
-                0x00411c0f                IconNozzle2
+                0x00411c2f       0xdf ./src/Icons/NozzleIcons.o
+                0x00411c2f                IconNozzle2
  .rodata.IconNozzle3
-                0x00411cee       0xdf ./src/Icons/NozzleIcons.o
-                0x00411cee                IconNozzle3
+                0x00411d0e       0xdf ./src/Icons/NozzleIcons.o
+                0x00411d0e                IconNozzle3
  .rodata.IconNozzle4
-                0x00411dcd       0xdf ./src/Icons/NozzleIcons.o
-                0x00411dcd                IconNozzle4
+                0x00411ded       0xdf ./src/Icons/NozzleIcons.o
+                0x00411ded                IconNozzle4
  .rodata._ZN6BuzzerL11volumeTableE
-                0x00411eac       0x14 ./src/Hardware/Buzzer.o
+                0x00411ecc       0x14 ./src/Hardware/Buzzer.o
  .rodata.str1.1
-                0x00411ec0       0x6d ./src/Hardware/SerialIo.o
- *fill*         0x00411f2d        0x3 
+                0x00411ee0       0x6d ./src/Hardware/SerialIo.o
+ *fill*         0x00411f4d        0x3 
  .rodata._ZTV4UTFT
-                0x00411f30       0x10 ./src/Hardware/UTFT.o
-                0x00411f30                vtable for UTFT
+                0x00411f50       0x10 ./src/Hardware/UTFT.o
+                0x00411f50                vtable for UTFT
  .rodata.glcd19x21
-                0x00411f40     0x32c5 ./src/Fonts/glcd19x21.o
-                0x00411f40                glcd19x21
- *fill*         0x00415205        0x3 
- .rodata        0x00415208       0x2c ./src/ASF/sam/drivers/pwm/pwm.o
+                0x00411f60     0x32c5 ./src/Fonts/glcd19x21.o
+                0x00411f60                glcd19x21
+ *fill*         0x00415225        0x3 
+ .rodata        0x00415228       0x2c ./src/ASF/sam/drivers/pwm/pwm.o
  .rodata.colourSchemes
-                0x00415234       0xa8 ./src/ColourSchemes.o
-                0x00415234                colourSchemes
- *fill*         0x004152dc        0x4 
+                0x00415254       0xa8 ./src/ColourSchemes.o
+                0x00415254                colourSchemes
+ *fill*         0x004152fc        0x4 
  .rodata._ZTV12DisplayField
-                0x004152e0       0x18 ./src/Display.o
-                0x004152e0                vtable for DisplayField
+                0x00415300       0x18 ./src/Display.o
+                0x00415300                vtable for DisplayField
  .rodata._ZTV10ButtonBase
-                0x004152f8       0x28 ./src/Display.o
-                0x004152f8                vtable for ButtonBase
+                0x00415318       0x28 ./src/Display.o
+                0x00415318                vtable for ButtonBase
  .rodata._ZTV12SingleButton
-                0x00415320       0x28 ./src/Display.o
-                0x00415320                vtable for SingleButton
+                0x00415340       0x28 ./src/Display.o
+                0x00415340                vtable for SingleButton
  .rodata._ZTV12IntegerField
-                0x00415348       0x20 ./src/Display.o
-                0x00415348                vtable for IntegerField
- .rodata._ZTV10FloatField
                 0x00415368       0x20 ./src/Display.o
-                0x00415368                vtable for FloatField
+                0x00415368                vtable for IntegerField
+ .rodata._ZTV10FloatField
+                0x00415388       0x20 ./src/Display.o
+                0x00415388                vtable for FloatField
  .rodata._ZTV11PopupWindow
-                0x00415388       0x18 ./src/Display.o
-                0x00415388                vtable for PopupWindow
+                0x004153a8       0x18 ./src/Display.o
+                0x004153a8                vtable for PopupWindow
  .rodata._ZTV11ProgressBar
-                0x004153a0       0x18 ./src/Display.o
-                0x004153a0                vtable for ProgressBar
+                0x004153c0       0x18 ./src/Display.o
+                0x004153c0                vtable for ProgressBar
  .rodata._ZTV9TextField
-                0x004153b8       0x20 ./src/Display.o
-                0x004153b8                vtable for TextField
+                0x004153d8       0x20 ./src/Display.o
+                0x004153d8                vtable for TextField
  .rodata._ZTV10TextButton
-                0x004153d8       0x28 ./src/Display.o
-                0x004153d8                vtable for TextButton
+                0x004153f8       0x28 ./src/Display.o
+                0x004153f8                vtable for TextButton
  .rodata._ZTV10CharButton
-                0x00415400       0x28 ./src/Display.o
-                0x00415400                vtable for CharButton
+                0x00415420       0x28 ./src/Display.o
+                0x00415420                vtable for CharButton
  .rodata._ZTV15StaticTextField
-                0x00415428       0x20 ./src/Display.o
-                0x00415428                vtable for StaticTextField
+                0x00415448       0x20 ./src/Display.o
+                0x00415448                vtable for StaticTextField
  .rodata._ZTV13IntegerButton
-                0x00415448       0x28 ./src/Display.o
-                0x00415448                vtable for IntegerButton
+                0x00415468       0x28 ./src/Display.o
+                0x00415468                vtable for IntegerButton
  .rodata._ZTV10MainWindow
-                0x00415470       0x18 ./src/Display.o
-                0x00415470                vtable for MainWindow
+                0x00415490       0x18 ./src/Display.o
+                0x00415490                vtable for MainWindow
  .rodata._ZTV10IconButton
-                0x00415488       0x28 ./src/Display.o
-                0x00415488                vtable for IconButton
+                0x004154a8       0x28 ./src/Display.o
+                0x004154a8                vtable for IconButton
  .rodata.str1.1
-                0x004154b0       0x36 ./src/FileManager.o
+                0x004154d0       0x36 ./src/FileManager.o
                                  0x3e (size before relaxing)
  .rodata.str1.1
-                0x004154e6       0x28 ./src/MessageLog.o
+                0x00415506       0x28 ./src/MessageLog.o
  .rodata.str1.1
-                0x0041550e      0x19b ./src/PanelDue.o
+                0x0041552e      0x19b ./src/PanelDue.o
                                 0x19f (size before relaxing)
- *fill*         0x004156a9        0x3 
+ *fill*         0x004156c9        0x3 
  .rodata._ZL14arrayDataTable
-                0x004156ac       0x58 ./src/PanelDue.o
+                0x004156cc       0x58 ./src/PanelDue.o
  .rodata._ZL17nonArrayDataTable
-                0x00415704       0xe0 ./src/PanelDue.o
+                0x00415724       0xe0 ./src/PanelDue.o
  .rodata._ZL13firmwareTypes
-                0x004157e4       0x18 ./src/PanelDue.o
+                0x00415804       0x18 ./src/PanelDue.o
  .rodata.str1.1
-                0x004157fc        0xf ./src/Print.o
- *fill*         0x0041580b        0x1 
+                0x0041581c        0xf ./src/Print.o
+ *fill*         0x0041582b        0x1 
  .rodata._ZZ19CreateBabystepPopupRK12ColourSchemeE13babystepIcons
-                0x0041580c        0x8 ./src/UserInterface.o
+                0x0041582c        0x8 ./src/UserInterface.o
  .rodata._ZZ15CreateMovePopupRK12ColourSchemeE11xyJogValues
-                0x00415814       0x20 ./src/UserInterface.o
+                0x00415834       0x20 ./src/UserInterface.o
  .rodata._ZZ19CreateBaudRatePopupRK12ColourSchemeE13baudPopupText
-                0x00415834       0x14 ./src/UserInterface.o
+                0x00415854       0x14 ./src/UserInterface.o
  .rodata._ZZ19CreateBaudRatePopupRK12ColourSchemeE15baudPopupParams
-                0x00415848       0x14 ./src/UserInterface.o
+                0x00415868       0x14 ./src/UserInterface.o
  .rodata._ZZ24CreateIntegerAdjustPopupRK12ColourSchemeE13tempPopupText
-                0x0041585c       0x14 ./src/UserInterface.o
+                0x0041587c       0x14 ./src/UserInterface.o
  .rodata._ZZ19CreateKeyboardPopupm12ColourSchemeE6keysDE
-                0x00415870       0x10 ./src/UserInterface.o
+                0x00415890       0x10 ./src/UserInterface.o
  .rodata._ZZ24CreateIntegerAdjustPopupRK12ColourSchemeE15tempPopupParams
-                0x00415880       0x14 ./src/UserInterface.o
+                0x004158a0       0x14 ./src/UserInterface.o
  .rodata._ZZ19CreateKeyboardPopupm12ColourSchemeE6keysEN
-                0x00415894       0x10 ./src/UserInterface.o
+                0x004158b4       0x10 ./src/UserInterface.o
  .rodata._ZZ19CreateKeyboardPopupm12ColourSchemeE9keyboards
-                0x004158a4        0xc ./src/UserInterface.o
+                0x004158c4        0xc ./src/UserInterface.o
  .rodata._ZZ17CreateVolumePopupRK12ColourSchemeE15volumePopupText
-                0x004158b0       0x18 ./src/UserInterface.o
+                0x004158d0       0x18 ./src/UserInterface.o
  .rodata.str1.1
-                0x004158c8      0xd74 ./src/UserInterface.o
+                0x004158e8      0xd74 ./src/UserInterface.o
                                 0xdcc (size before relaxing)
  .rodata._ZL11heaterIcons
-                0x0041663c       0x14 ./src/UserInterface.o
+                0x0041665c       0x14 ./src/UserInterface.o
  .rodata._ZZ15CreateMovePopupRK12ColourSchemeE10zJogValues
-                0x00416650       0x20 ./src/UserInterface.o
+                0x00416670       0x20 ./src/UserInterface.o
  .rodata._ZZ19CreateKeyboardPopupm12ColourSchemeE6keysFR
-                0x00416670       0x10 ./src/UserInterface.o
+                0x00416690       0x10 ./src/UserInterface.o
  .rodata._ZZ19CreateBabystepPopupRK12ColourSchemeE16babystepCommands
-                0x00416680        0x8 ./src/UserInterface.o
+                0x004166a0        0x8 ./src/UserInterface.o
  .rodata._ZL9axisNames
-                0x00416688       0x18 ./src/UserInterface.o
+                0x004166a8       0x18 ./src/UserInterface.o
  .rodata._ZL14LanguageTables
-                0x004166a0      0x378 ./src/UserInterface.o
+                0x004166c0      0x378 ./src/UserInterface.o
  .rodata.str1.1
                 0x00000000      0xd74 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-impure.o)
                                   0x2 (size before relaxing)
  .rodata.fpi.5243
-                0x00416a18       0x14 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
+                0x00416a38       0x14 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
  .rodata.str1.1
-                0x00416a2c        0x6 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
+                0x00416a4c        0x6 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
                                   0xc (size before relaxing)
- *fill*         0x00416a32        0x6 
+ *fill*         0x00416a52        0x6 
  .rodata.tinytens
-                0x00416a38       0x28 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
+                0x00416a58       0x28 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
  .rodata.fpinan.5279
-                0x00416a60       0x14 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
+                0x00416a80       0x14 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-strtod.o)
  .rodata.str1.1
-                0x00416a74       0x11 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-svfprintf.o)
+                0x00416a94       0x11 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-svfprintf.o)
  .rodata.str1.1
-                0x00416a85       0x22 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-vfprintf_i.o)
+                0x00416aa5       0x22 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-vfprintf_i.o)
  .rodata._ctype_
-                0x00416aa7      0x101 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-ctype_.o)
-                0x00416aa7                _ctype_
+                0x00416ac7      0x101 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-ctype_.o)
+                0x00416ac7                _ctype_
  .rodata.__sf_fake_stdin
-                0x00416ba8       0x20 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-findfp.o)
-                0x00416ba8                __sf_fake_stdin
- .rodata.__sf_fake_stdout
                 0x00416bc8       0x20 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-findfp.o)
-                0x00416bc8                __sf_fake_stdout
- .rodata.__sf_fake_stderr
+                0x00416bc8                __sf_fake_stdin
+ .rodata.__sf_fake_stdout
                 0x00416be8       0x20 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-findfp.o)
-                0x00416be8                __sf_fake_stderr
+                0x00416be8                __sf_fake_stdout
+ .rodata.__sf_fake_stderr
+                0x00416c08       0x20 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-findfp.o)
+                0x00416c08                __sf_fake_stderr
  .rodata.str1.1
-                0x00416c08        0x8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-locale.o)
+                0x00416c28        0x8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-locale.o)
                                   0xb (size before relaxing)
  .rodata.__mprec_tens
-                0x00416c10       0xc8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x00416c10                __mprec_tens
+                0x00416c30       0xc8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x00416c30                __mprec_tens
  .rodata.__mprec_bigtens
-                0x00416cd8       0x28 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
-                0x00416cd8                __mprec_bigtens
+                0x00416cf8       0x28 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x00416cf8                __mprec_bigtens
  .rodata.p05.5278
-                0x00416d00        0xc e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
+                0x00416d20        0xc e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-mprec.o)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00416d0c                . = ALIGN (0x4)
+                0x00416d2c                . = ALIGN (0x4)
  *(.init)
- .init          0x00416d0c        0x4 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crti.o
-                0x00416d0c                _init
- .init          0x00416d10        0x8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtn.o
-                0x00416d18                . = ALIGN (0x4)
-                0x00416d18                __preinit_array_start = .
+ .init          0x00416d2c        0x4 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crti.o
+                0x00416d2c                _init
+ .init          0x00416d30        0x8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtn.o
+                0x00416d38                . = ALIGN (0x4)
+                0x00416d38                __preinit_array_start = .
  *(.preinit_array)
-                0x00416d18                __preinit_array_end = .
-                0x00416d18                . = ALIGN (0x4)
-                0x00416d18                __init_array_start = .
+                0x00416d38                __preinit_array_end = .
+                0x00416d38                . = ALIGN (0x4)
+                0x00416d38                __init_array_start = .
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x00416d18        0x4 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtbegin.o
- .init_array    0x00416d1c        0x4 ./src/Hardware/SerialIo.o
- .init_array    0x00416d20        0x4 ./src/FileManager.o
- .init_array    0x00416d24        0x4 ./src/PanelDue.o
- .init_array    0x00416d28        0x4 ./src/UserInterface.o
-                0x00416d2c                __init_array_end = .
-                0x00416d2c                . = ALIGN (0x4)
+ .init_array    0x00416d38        0x4 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtbegin.o
+ .init_array    0x00416d3c        0x4 ./src/Hardware/SerialIo.o
+ .init_array    0x00416d40        0x4 ./src/FileManager.o
+ .init_array    0x00416d44        0x4 ./src/PanelDue.o
+ .init_array    0x00416d48        0x4 ./src/UserInterface.o
+                0x00416d4c                __init_array_end = .
+                0x00416d4c                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
  *crtend.o(.ctors)
-                0x00416d2c                . = ALIGN (0x4)
+                0x00416d4c                . = ALIGN (0x4)
  *(.fini)
- .fini          0x00416d2c        0x4 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crti.o
-                0x00416d2c                _fini
- .fini          0x00416d30        0x8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtn.o
-                0x00416d38                . = ALIGN (0x4)
-                0x00416d38                __fini_array_start = .
+ .fini          0x00416d4c        0x4 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crti.o
+                0x00416d4c                _fini
+ .fini          0x00416d50        0x8 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtn.o
+                0x00416d58                . = ALIGN (0x4)
+                0x00416d58                __fini_array_start = .
  *(.fini_array)
- .fini_array    0x00416d38        0x4 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtbegin.o
+ .fini_array    0x00416d58        0x4 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtbegin.o
  *(SORT(.fini_array.*))
-                0x00416d3c                __fini_array_end = .
+                0x00416d5c                __fini_array_end = .
  *crtbegin.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o) .dtors)
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
-                0x00416d3c                . = ALIGN (0x4)
-                0x00416d3c                _efixed = .
-                0x00416d3c                PROVIDE (__exidx_start, .)
+                0x00416d5c                . = ALIGN (0x4)
+                0x00416d5c                _efixed = .
+                0x00416d5c                PROVIDE (__exidx_start, .)
 
-.vfp11_veneer   0x00416d3c        0x0
+.vfp11_veneer   0x00416d5c        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x00416d3c        0x0
+.v4_bx          0x00416d5c        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x00416d3c        0x0
+.iplt           0x00416d5c        0x0
  .iplt          0x00000000        0x0 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtbegin.o
 
-.eh_frame       0x00416d3c        0x0
- .eh_frame      0x00416d3c        0x0 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtbegin.o
+.eh_frame       0x00416d5c        0x0
+ .eh_frame      0x00416d5c        0x0 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtbegin.o
 
-.rel.dyn        0x00416d3c        0x0
+.rel.dyn        0x00416d5c        0x0
  .rel.iplt      0x00000000        0x0 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtbegin.o
 
-.jcr            0x00416d3c        0x0
- .jcr           0x00416d3c        0x0 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtbegin.o
+.jcr            0x00416d5c        0x0
+ .jcr           0x00416d5c        0x0 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtbegin.o
 
-.igot.plt       0x00416d3c        0x0
+.igot.plt       0x00416d5c        0x0
  .igot.plt      0x00000000        0x0 e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv7e-m/crtbegin.o
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00416d3c                PROVIDE (__exidx_end, .)
-                0x00416d3c                . = ALIGN (0x4)
-                0x00416d3c                _etext = .
+                0x00416d5c                PROVIDE (__exidx_end, .)
+                0x00416d5c                . = ALIGN (0x4)
+                0x00416d5c                _etext = .
 
-.relocate       0x20000000      0x20c load address 0x00416d3c
+.relocate       0x20000000      0x20c load address 0x00416d5c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _srelocate = .
  *(.ramfunc .ramfunc.*)
@@ -3276,7 +3276,7 @@ LOAD e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/g
                 0x2000020c                . = ALIGN (0x4)
                 0x2000020c                _erelocate = .
 
-.bss            0x2000020c     0x3494 load address 0x00416f48
+.bss            0x2000020c     0x3494 load address 0x00416f68
                 0x2000020c                . = ALIGN (0x4)
                 0x2000020c                _sbss = .
                 0x2000020c                _szero = .
@@ -3636,7 +3636,7 @@ LOAD e:/arduino-1.5.8/hardware/tools/gcc-arm-none-eabi-4.8.3-2014q1/bin/../lib/g
                 0x200036a0                _ebss = .
                 0x200036a0                _ezero = .
 
-.stack          0x200036a0     0x1000 load address 0x0041a3dc
+.stack          0x200036a0     0x1000 load address 0x0041a3fc
                 0x200036a0                . = ALIGN (0x8)
                 0x200036a0                _sstack = .
                 0x200046a0                . = (. + __stack_size__)
