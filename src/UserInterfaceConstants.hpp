@@ -21,7 +21,7 @@ const size_t NumColourSchemes = 2;
 
 #if DISPLAY_X == 480
 
-const unsigned int maxHeaters = 5;
+const unsigned int maxHeaters = 3;
 #define MAX_AXES	(4)
 
 const PixelNumber margin = 2;
