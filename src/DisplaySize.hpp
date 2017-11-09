@@ -26,7 +26,7 @@ const DisplayOrientation DefaultTouchOrientAdjust = static_cast<DisplayOrientati
 
 # define DISPLAY_CONTROLLER		SSD1963_480
 const DisplayOrientation DefaultDisplayOrientAdjust = static_cast<DisplayOrientation>(SwapXY | ReverseX | InvertBitmap);
-const DisplayOrientation DefaultTouchOrientAdjust = SwapXY;
+const DisplayOrientation DefaultTouchOrientAdjust = ReverseY;
 # define DISPLAY_X				(480)
 # define DISPLAY_Y				(272)
 
