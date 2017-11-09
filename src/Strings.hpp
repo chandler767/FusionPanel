@@ -123,7 +123,7 @@ const StringTable LanguageTables[3] =
 		"Extruder" THIN_SPACE "%",
 		"Speed ",							// note space at end
 		"Fan ",								// note space at end
-		"Time left: ",
+		"Time Remaining: ",
 		"file ",							// note space at end
 		", filament ",						// note space at end
 		", layer ",							// note space at end

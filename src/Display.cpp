@@ -407,10 +407,13 @@ void PopupWindow::Refresh(bool full)
 		lcd.setColor(backgroundColour);
 		lcd.fillRoundRect(xPos + 1, yPos + 2, xPos + width - 2, yPos + height - 3);
 
-		// Draw a double border
-		lcd.setColor(borderColour);
+
+		// Draw a double red, single black border
+		lcd.setColor(black);
 		lcd.drawRoundRect(xPos, yPos, xPos + width - 1, yPos + height - 1);
+		lcd.setColor(borderColour);
 		lcd.drawRoundRect(xPos + 1, yPos + 1, xPos + width - 2, yPos + height - 2);
+		lcd.drawRoundRect(xPos + 2, yPos + 2, xPos + width - 3, yPos + height - 3);
 	}
 	
 	for (DisplayField * null p = root; p != nullptr; p = p->next)

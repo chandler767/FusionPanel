@@ -1037,9 +1037,10 @@ namespace UI
 		if (index < (int)ARRAY_SIZE(timesLeft))
 		{
 			timesLeft[index] = seconds;
+			timesLeftText.copy("");
+
 			/*
-			timesLeftText.copy(strings->file);
-			AppendTimeLeft(timesLeft[0]);
+			 *AppendTimeLeft(timesLeft[0]);
 			timesLeftText.catFrom(strings->filament);
 			AppendTimeLeft(timesLeft[1]);
 			if (DisplayX >= 800)
@@ -1059,40 +1060,47 @@ namespace UI
 	// Change to the page indicated. Return true if the page has a permanently-visible button.
 	bool ChangePage(ButtonBase *newTab)
 	{
-		if (newTab != currentTab)
+		if (newTab->GetEvent() == evTabControl && GetStatus() == PrinterStatus::printing)
 		{
-			if (currentTab != nullptr)
+			ErrorBeep();
+			nameField->SetValue("Control Tab Unavailable.");
+			newTab->Press(false, 0);			// remove highlighting from tab
+		} else {
+			if (newTab != currentTab)
 			{
-				currentTab->Press(false, 0);			// remove highlighting from the old tab
-			}
-			newTab->Press(true, 0);						// highlight the new tab
-			currentTab = newTab;
-			mgr.ClearAllPopups();
-			switch(newTab->GetEvent())
-			{
-			case evTabControl:
-				mgr.SetRoot(controlRoot);
-				nameField->SetValue(machineName.c_str());
-				break;
-			case evTabPrint:
-				mgr.SetRoot(printRoot);
-				nameField->SetValue(PrintInProgress() ? printingFile.c_str() : machineName.c_str());
-				break;
-			case evTabMsg:
-				mgr.SetRoot(messageRoot);
-				if (keyboardIsDisplayed)
+				if (currentTab != nullptr)
 				{
-					mgr.SetPopup(keyboardPopup, AutoPlace, keyboardPopupY, false);
+					currentTab->Press(false, 0);			// remove highlighting from the old tab
 				}
-				break;
-			case evTabSetup:
-				mgr.SetRoot(setupRoot);
-				break;
-			default:
-				mgr.SetRoot(commonRoot);
-				break;
+				newTab->Press(true, 0);						// highlight the new tab
+				currentTab = newTab;
+				mgr.ClearAllPopups();
+				switch(newTab->GetEvent())
+				{
+				case evTabControl:
+					mgr.SetRoot(controlRoot);
+					nameField->SetValue(machineName.c_str());
+					break;
+				case evTabPrint:
+					mgr.SetRoot(printRoot);
+					nameField->SetValue(PrintInProgress() ? printingFile.c_str() : machineName.c_str());
+					break;
+				case evTabMsg:
+					mgr.SetRoot(messageRoot);
+					if (keyboardIsDisplayed)
+					{
+						mgr.SetPopup(keyboardPopup, AutoPlace, keyboardPopupY, false);
+					}
+					break;
+				case evTabSetup:
+					mgr.SetRoot(setupRoot);
+					break;
+				default:
+					mgr.SetRoot(commonRoot);
+					break;
+				}
+				mgr.Refresh(true);
 			}
-			mgr.Refresh(true);
 		}
 		return true;
 	}
