@@ -54,7 +54,7 @@ static ButtonBase *filesButton, *pauseButton, *resumeButton, *resetButton, *baby
 static TextField *timeLeftField, *zProbe;
 static TextField *fpNameField, *fpGeneratedByField;
 static StaticTextField *moveAxisRows[MAX_AXES];
-static StaticTextField *nameField, *statusField, *settingsNotSavedField;
+static StaticTextField *nameField, *statusField, *settingsNotSavedField, *printerMakeField, *printerSupportField;
 static IntegerButton *activeTemps[maxHeaters], *standbyTemps[maxHeaters];
 static IntegerButton *spd, *extrusionFactors[maxHeaters - 1], *fanSpeed, *baudRateButton, *volumeButton;
 static TextButton *languageButton, *coloursButton;
@@ -729,31 +729,33 @@ void CreateSetupTabFields(uint32_t language, const ColourScheme& colours)
 	mgr.SetRoot(baseRoot);
 	DisplayField::SetDefaultColours(colours.labelTextColour, colours.defaultBackColour);
 	// The firmware version field doubles up as an area for displaying debug messages, so make it the full width of the display
-	mgr.AddField(fwVersionField = new TextField(row1, margin, DisplayX, TextAlignment::Left, strings->firmwareVersion, VERSION_TEXT));
-	mgr.AddField(freeMem = new IntegerField(row2, margin, DisplayX/2 - margin, TextAlignment::Left, "Free RAM: "));
-	mgr.AddField(touchX = new IntegerField(row2, DisplayX/2, DisplayX/4, TextAlignment::Left, "Touch: ", ","));
-	mgr.AddField(touchY = new IntegerField(row2, (DisplayX * 3)/4, DisplayX/4, TextAlignment::Left));
-
+	//mgr.AddField(fwVersionField = new TextField(row1, margin, DisplayX, TextAlignment::Left, strings->firmwareVersion, VERSION_TEXT));
+	// mgr.AddField(freeMem = new IntegerField(row2, margin, DisplayX/2 - margin, TextAlignment::Left, "Free RAM: "));
+	// mgr.AddField(touchX = new IntegerField(row2, DisplayX/2, DisplayX/4, TextAlignment::Left, "Touch: ", ","));
+	// mgr.AddField(touchY = new IntegerField(row2, (DisplayX * 3)/4, DisplayX/4, TextAlignment::Left));
+	mgr.AddField(printerMakeField = new StaticTextField(row2, margin, DisplayX - 2 * margin, TextAlignment::Centre, "Fusion3 F400"));
 	DisplayField::SetDefaultColours(colours.errorTextColour, colours.errorBackColour);
-	mgr.AddField(settingsNotSavedField = new StaticTextField(row3, margin, DisplayX - 2 * margin, TextAlignment::Left, strings->settingsNotSavedText));
+	mgr.AddField(settingsNotSavedField = new StaticTextField(row3, margin, DisplayX - 2 * margin, TextAlignment::Centre, strings->settingsNotSavedText));
 	settingsNotSavedField->Show(false);
 
 	DisplayField::SetDefaultColours(colours.buttonTextColour, colours.buttonTextBackColour);
-	baudRateButton = AddIntegerButton(row4, 0, 3, nullptr, " baud", evSetBaudRate);
-	baudRateButton->SetValue(GetBaudRate());
-	volumeButton = AddIntegerButton(row4, 1, 3, strings->volume, nullptr, evSetVolume);
+	//baudRateButton = AddIntegerButton(row4, 0, 3, nullptr, " baud", evSetBaudRate);
+	//baudRateButton->SetValue(GetBaudRate());
+	volumeButton = AddIntegerButton(row5, 0, 3, strings->volume, nullptr, evSetVolume);
 	volumeButton->SetValue(GetVolume());
-	languageButton = AddTextButton(row4, 2, 3, LanguageTables[language].languageName, evSetLanguage, nullptr);
-	AddTextButton(row5, 0, 3, strings->calibrateTouch, evCalTouch, nullptr);
-	AddTextButton(row5, 1, 3, strings->mirrorDisplay, evInvertX, nullptr);
-	AddTextButton(row5, 2, 3, strings->invertDisplay, evInvertY, nullptr);
+	//languageButton = AddTextButton(row4, 2, 3, LanguageTables[language].languageName, evSetLanguage, nullptr);
+	AddTextButton(row4, 2, 3, strings->calibrateTouch, evCalTouch, nullptr);
+	//AddTextButton(row5, 1, 3, strings->mirrorDisplay, evInvertX, nullptr);
+	//AddTextButton(row5, 2, 3, strings->invertDisplay, evInvertY, nullptr);
 	//coloursButton = AddTextButton(row6, 0, 3, strings->colourSchemeNames[colours.index], evSetColours, nullptr); // Hide the button that allows users to set light or dark colors.
 	//coloursButton->SetText(strings->colourSchemeNames[colours.index]);
-	AddTextButton(row6, 1, 3, strings->brightnessDown, evDimmer, nullptr);
-	AddTextButton(row6, 2, 3, strings->brightnessUp, evBrighter, nullptr);
-	AddTextButton(row7, 0, 3, strings->saveSettings, evSaveSettings, nullptr);
-	AddTextButton(row7, 1, 3, strings->clearSettings, evFactoryReset, nullptr);
-	AddTextButton(row7, 2, 3, strings->saveAndRestart, evRestart, nullptr);
+	AddTextButton(row4, 0, 3, strings->brightnessDown, evDimmer, nullptr);
+	AddTextButton(row4, 1, 3, strings->brightnessUp, evBrighter, nullptr);
+	// AddTextButton(row6, 0, 3, strings->saveSettings, evSaveSettings, nullptr);
+	AddTextButton(row5, 1, 3, strings->clearSettings, evFactoryReset, nullptr);
+	AddTextButton(row5, 2, 3, strings->saveAndRestart, evRestart, nullptr);
+	DisplayField::SetDefaultColours(colours.labelTextColour, colours.defaultBackColour);
+	mgr.AddField(printerSupportField = new StaticTextField(row8, margin, DisplayX - 2 * margin, TextAlignment::Centre, "For support visit Fusion3Design.com"));
 	setupRoot = mgr.GetRoot();
 }
 

@@ -143,16 +143,16 @@ const StringTable LanguageTables[3] =
 		"Brightness +",
 		"Save settings",
 		"Clear settings",
-		"Save & Restart",
+		"Save settings",
 
 		// Misc
-		"Confirm factory reset",
-		"Confirm restart",
-		"Confirm file delete",
+		"Confirm Factory Reset",
+		"Confirm Save & Restart",
+		"Confirm File Delete",
 		"Are you sure?",
 		"Touch the spot",
 		"Some settings are not saved!",
-		"Touch Save & Restart to use new settings",
+		"Touch save to use new settings",
 		"Move head",
 		"Extrusion amount (mm)",
 		"Speed (mm/s)",
@@ -162,7 +162,7 @@ const StringTable LanguageTables[3] =
 		"Current Z offset: ",
 		"Message",
 		"Messages",
-		"Panel Due firmware version ",	// note space at end
+		"Panel Due Firmware Version ",	// note space at end
 
 		// File popup
 		"Files on card ",				// note the space on the end
@@ -435,11 +435,11 @@ const StringTable LanguageTables[3] =
 		"Brightness +",
 		"Save settings",
 		"Clear settings",
-		"Save & Restart",
+		"Save settings",
 
 		// Misc
 		"Confirm factory reset",
-		"Confirm restart",
+		"Confirm save & restart",
 		"Confirm file delete",
 		"Are you sure?",
 		"Touch the spot",
