@@ -115,7 +115,7 @@ extern uint8_t glcd28x32[];				// declare which fonts we will be using
 #endif
 
 const PixelNumber buttonHeight = rowTextHeight + 4;
-const PixelNumber tempButtonWidth = (DISPLAY_X + fieldSpacing - bedColumn)/maxHeaters - fieldSpacing;
+const PixelNumber tempButtonWidth = (DISPLAY_X + fieldSpacing - bedColumn - iconButtonMargin)/maxHeaters - fieldSpacing;
 
 const PixelNumber row1 = 0;										// we don't need a top margin
 const PixelNumber row2 = row1 + rowHeight - 2;					// the top row never has buttons so it can be shorter
