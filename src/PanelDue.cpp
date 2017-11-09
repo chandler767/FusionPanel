@@ -399,7 +399,7 @@ void DoTouchCalib(PixelNumber x, PixelNumber y, PixelNumber altX, PixelNumber al
 	const PixelNumber touchCircleRadius = DisplayY/32;
 	const PixelNumber touchCalibMaxError = DisplayY/6;
 	
-	lcd.setColor(colours->labelTextColour);
+	lcd.setColor(colours->titleBarTextColour);
 	lcd.fillCircle(x, y, touchCircleRadius);
 	
 	for (;;)
