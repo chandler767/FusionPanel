@@ -28,7 +28,7 @@ static const char* array const axisNames[] = { "X", "Y", "Z", "U", "V", "W" };
 #if DISPLAY_X == 800
 const Icon heaterIcons[maxHeaters] = { IconBed, IconNozzle1, IconNozzle2, IconNozzle3, IconNozzle4, IconNozzle5, IconNozzle6 };
 #else
-const Icon heaterIcons[maxHeaters] = { IconBed, IconNozzle1, IconNozzle2, IconNozzle3, IconNozzle4 };
+const Icon heaterIcons[maxHeaters] = { IconBed, IconNozzle1, IconNozzle2 };
 #endif
 
 // Public fields
@@ -545,8 +545,8 @@ void CreateBabystepPopup(const ColourScheme& colours)
 void CreateTemperatureGrid(const ColourScheme& colours)
 {
 	// Add the emergency stop button
-	DisplayField::SetDefaultColours(colours.stopButtonTextColour, colours.stopButtonBackColour);
-	mgr.AddField(new TextButton(row2, margin, bedColumn - fieldSpacing - margin - 16, strings->stop, evEmergencyStop));
+	//DisplayField::SetDefaultColours(colours.stopButtonTextColour, colours.stopButtonBackColour);
+	//mgr.AddField(new TextButton(row2, margin, bedColumn - fieldSpacing - margin - 16, strings->stop, evEmergencyStop));
 
 	// Add the labels and the debug field
 	DisplayField::SetDefaultColours(colours.labelTextColour, colours.defaultBackColour);
