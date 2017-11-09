@@ -785,44 +785,6 @@ void CreateMainPages(uint32_t language, const ColourScheme& colours)
 	CreateTemperatureGrid(colours);
 	commonRoot = mgr.GetRoot();		// save the root of fields that we display on more than one page
 
-	/*
-	// Fusion3 boot animation
-	lcd.drawBitmap16(140, (DisplayY/2-19), 200, 39, FusionLogo);
-
-	// Progress bar on the loading screen.
-	lcd.setColor(slate);
-	lcd.fillRect(0,250,480,270);
-	lcd.setColor(orange);
-	unsigned int step_count = 0;
-	for (unsigned int i = 2; i < (DisplayY-2); ++i)
-	{
-		step_count=step_count+1;
-		if (step_count == 21)
-		{
-			lcd.setColor(black);
-		}
-		else if (step_count == 25)
-		{
-			lcd.setColor(orange);
-			step_count=0;
-		}
-		lcd.fillRect((i-1),252,i,268);
-		delay_ms(6);
-	}
-*/
-	/* Simple version of progress bar.
-	lcd.setColor(slate);
-	lcd.fillRect(0,250,480,270);
-	lcd.setColor(orange);
-	for (unsigned int i = 2; i < (DisplayY-2); ++i) // Progress bar on the loading screen.
-	{
-		lcd.fillRect((i-1),252,i,268);
-		delay_ms(5);
-	}*/
-
-	delay_ms(500);
-
-
 	// Create the pages
 	CreateControlTabFields(colours);
 	CreatePrintingTabFields(colours);
