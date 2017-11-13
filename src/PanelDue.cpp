@@ -49,7 +49,7 @@
 #include "PrinterStatus.hpp"
 #include "UserInterface.hpp"
 
-#include "fusionlogo.hpp" // Fusion3 boot screen
+#include "fusion3logo.hpp" // Fusion3 logo
 
 #ifdef OEM
 # if DISPLAY_X == 800
@@ -1207,22 +1207,22 @@ int main(void)
 #endif
 */
 
-//if (rstc_get_reset_cause(RSTC) != RSTC_SOFTWARE_RESET) // Only show on hardware reboot.
-	//{
-	// Fusion3 boot animation
-	lcd.setColor(0x52AA); // Same background as image.
+/*if (rstc_get_reset_cause(RSTC) != RSTC_SOFTWARE_RESET) // Show on software reset (uncomment to show on hardware reset only)
+	{*/
+	// Fusion3 splash screen
+	lcd.setColor(0x52AA); // Same background color as logo image
 	lcd.fillRect(0,0,DisplayX,DisplayY);
-	lcd.drawBitmap16(140, (DisplayY/2-19), 200, 39, FusionLogo);
-	// Progress bar on the loading screen.
-	lcd.setColor(black);
+	lcd.drawBitmap16(140, (DisplayY/2-19), 200, 39, FusionLogo); // See fusion3logo.cpp and fusion3logo.hpp
+	// Progress bar
+	lcd.setColor(black); // Black background
 	lcd.fillRect(0,250,DisplayX,270);
-	lcd.setColor(orange);
-	for (unsigned int i = 2; i < (DisplayX-2); ++i) // Progress bar on the loading screen.
+	lcd.setColor(orange); // Orange foreground
+	for (unsigned int i = 2; i < (DisplayX-2); ++i) // Draw progress bar
 	{
 		lcd.fillRect((i-1),252,i,268);
 		delay_ms(5);
 	}
-	delay_ms(500);
+	delay_ms(500); 
 //}
 
 	mgr.Refresh(true);								// draw the screen for the first time
