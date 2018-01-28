@@ -1212,7 +1212,7 @@ int main(void)
 	// Fusion3 splash screen
 	lcd.setColor(0x52AA); // Same background color as logo image
 	lcd.fillRect(0,0,DisplayX,DisplayY);
-	lcd.drawBitmap16(140, (DisplayY/2-19), 200, 39, FusionLogo); // See fusion3logo.cpp and fusion3logo.hpp
+	lcd.drawBitmap16(140, (DisplayY/2-19), 200, 39, Fusion3Logo); // See fusion3logo.cpp and fusion3logo.hpp
 	// Progress bar
 	lcd.setColor(black); // Black background
 	lcd.fillRect(0,250,DisplayX,270);
