@@ -360,7 +360,7 @@ PrinterStatus GetStatus()
 
 void InitLcd(DisplayOrientation dor, uint32_t language, uint32_t colourScheme)
 {
-	lcd.InitLCD(dor, IS_24BIT, IS_ER);									// set up the LCD
+	lcd.InitLCD(static_cast<DisplayOrientation>(nvData.lcdOrientation ^ (ReverseX | ReverseY | InvertText | InvertBitmap)), IS_24BIT, IS_ER);									// set up the LCD
 	colours = &colourSchemes[colourScheme];
 	UI::CreateFields(language, *colours);							// create all the fields
 	lcd.fillScr(black);												// make sure the memory is clear
